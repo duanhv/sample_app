@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.3.1'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.8'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'growl'
 end
 
 gem 'sass-rails', '4.0.3'
