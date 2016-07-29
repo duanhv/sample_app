@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe User do
+  include Rails.application.routes.url_helpers
   before { @user = User.new(name: "Example user", email: "user@example.com",
                             password: "foobar", password_confirmation: "foobar") }
   subject { @user }
